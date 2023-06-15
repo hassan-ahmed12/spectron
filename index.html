@@ -13,16 +13,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.esm.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
 </head>
 <body>
-    <script> 
-        $(document).ready(function () {
-           $( "#dynamic-header" ).load( "header.html #header" );
-        });
-    </script>
-    <div id='dynamic-header'></div>
+    <header>
+        <div class="header-primary">
+            <div class="fl-row row-fixed">
+                <div class="col-group col-of-3">
+                    <div class="col"><div class="main-logo"><img src="https://i.postimg.cc/wTdwMZmk/logo.png" alt="logo" width="200px"></div></div>
+                    <div class="col">
+                        <nav class="head-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="./pages/contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col"><a href="#">Get Started</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main>
         <div class="main-primary">
