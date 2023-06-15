@@ -1,2 +1,3 @@
 # spectron
-# Hassan Ahmed
+
+Starting from the basics
