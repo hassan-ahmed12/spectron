@@ -1,0 +1,62 @@
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+div.fl-row {
+    background-color: yellow;
+}
+div.fl-row.row-fixed {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+div.fl-row.row-full {
+    max-width: 100%;
+    margin: 0;
+}
+div.fl-row .col-group{
+    display: flex;
+}
+div.fl-row .col-of-1 .col {
+    width: 100%;
+}
+div.fl-row .col-of-2 .col {
+    width: 50%;
+}
+div.fl-row .col-of-3 .col {
+    width: 33.33%;
+}
+
+/* Header */
+.header-primary .main-logo img {
+    filter: brightness(0) invert(1)
+}
+.header-primary .fl-row .col-group {
+    flex-direction: row;
+    align-items: center;
+}
+.header-primary .fl-row .col-group .col:first-child {
+    width: 20%;
+}
+.header-primary .fl-row .col-group .col:nth-child(2) {
+    width: 60%;
+}
+.header-primary .fl-row .col-group .col:last-child {
+    width: 20%;
+}
+
+/*Hero section*/
+.main-primary .hero {
+    height: 90vh;
+    background-image: url(../../media/stock-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-top: -130px;
+}
