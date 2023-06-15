@@ -53,7 +53,7 @@ div.fl-row .col-of-3 .col {
 /*Hero section*/
 .main-primary .hero {
     height: 90vh;
-    background-image: url(../../media/stock-1.jpg);
+    background-image: url('https://i.postimg.cc/zXS0g7wY/stock-1.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
