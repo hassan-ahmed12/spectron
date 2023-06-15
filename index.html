@@ -5,33 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spectron Designs</title>
-    <script type=module src="/assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/allstyle.css">
     <link rel="icon" type="image" href="https://i.postimg.cc/XN52V4pJ/fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.esm.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
 </head>
 <body>
-    <header>
-        <div class="header-primary">
-            <div class="fl-row row-fixed">
-                <div class="col-group col-of-3">
-                    <div class="col"><div class="main-logo"><img src="https://i.postimg.cc/wTdwMZmk/logo.png" alt="logo" width="200px"></div></div>
-                    <div class="col">
-                        <nav class="head-menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="./pages/contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col"><a href="#">Get Started</a></div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <script> 
+        $(document).ready(function () {
+           $( "#dynamic-header" ).load( "header.html #header" );
+        });
+    </script>
+    <div id='dynamic-header'></div>
 
     <main>
         <div class="main-primary">
