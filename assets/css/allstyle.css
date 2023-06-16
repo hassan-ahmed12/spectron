@@ -7,27 +7,30 @@ body {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
-div.fl-row {
-    background-color: yellow;
+.fl-row {
 }
-div.fl-row.row-fixed {
+.fl-row.row-fixed {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
-div.fl-row.row-full {
+.fl-row.row-full {
     max-width: 100%;
     margin: 0;
 }
-div.fl-row .col-group{
+.fl-row .col-group{
     display: flex;
 }
-div.fl-row .col-of-1 .col {
+.fl-row .col-of-1 .col {
     width: 100%;
 }
-div.fl-row .col-of-2 .col {
+.fl-row .col-of-2 .col {
     width: 50%;
 }
-div.fl-row .col-of-3 .col {
+.fl-row .col-of-3 .col {
     width: 33.33%;
+}
+a, a:focus, a:visited{
+    text-decoration: none;
+    color: #fff;
 }
