@@ -1,6 +1,6 @@
 // alert("main.js loaded");
 
-//Loading header
-$(function(){
-    $("#dynamic-header").load("template/header.html #header");
-  });
+//Loading header through jquery, this loads the whole header.html or element with #header id to the div with #dynamic-header id in any other html file.
+// $(function(){
+//     $("#dynamic-header").load("template/header.html #header");
+//   });
