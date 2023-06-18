@@ -4,3 +4,7 @@
 // $(function(){
 //     $("#dynamic-header").load("template/header.html #header");
 //   });
+
+function btnfun() {
+    alert("Fuck off!");
+  }

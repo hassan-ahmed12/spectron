@@ -34,3 +34,11 @@ a, a:focus, a:visited{
     text-decoration: none;
     color: #fff;
 }
+/* Global Button */
+div.btn-box a {
+    width: fit-content;
+    margin: auto;
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+}

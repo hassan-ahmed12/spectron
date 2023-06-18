@@ -46,7 +46,7 @@
                     </div>
                     <div class="col">
                         <div class="btn-box">
-                            <a href="#">Get Started</a>
+                            <a href="" onclick="btnfun()">Get Started</a>
                         </div>
                     </div>
                 </div>
