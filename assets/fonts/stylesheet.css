@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'thicccboiblack';
+    src: url('thicccboi-black-webfont.woff2') format('woff2'),
+         url('thicccboi-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'thicccboibold';
+    src: url('thicccboi-bold-webfont.woff2') format('woff2'),
+         url('thicccboi-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'thicccboiextra_bold';
+    src: url('thicccboi-extrabold-webfont.woff2') format('woff2'),
+         url('thicccboi-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'thicccboilight';
+    src: url('thicccboi-light-webfont.woff2') format('woff2'),
+         url('thicccboi-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'thicccboimedium';
+    src: url('thicccboi-medium-webfont.woff2') format('woff2'),
+         url('thicccboi-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'thicccboiregular';
+    src: url('thicccboi-regular-webfont.woff2') format('woff2'),
+         url('thicccboi-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'thicccboisemi_bold';
+    src: url('thicccboi-semibold-webfont.woff2') format('woff2'),
+         url('thicccboi-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'thicccboithiccc_af';
+    src: url('thicccboi-thicccaf-webfont.woff2') format('woff2'),
+         url('thicccboi-thicccaf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'thicccboithin';
+    src: url('thicccboi-thin-webfont.woff2') format('woff2'),
+         url('thicccboi-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

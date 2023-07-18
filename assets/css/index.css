@@ -1,10 +1,26 @@
 /* Hero Section */
 .main-primary .hero {
-    height: 100vh;
-    background-image: url('https://i.postimg.cc/zXS0g7wY/stock-1.jpg');
+    background-color: #0f1825;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' width='595' height='894' viewBox='0 0 595 894' fill='none'%3E%3Cmask id='mask0_284_79' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='595' height='894'%3E%3Crect width='595' height='894' fill='%230F1825'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_284_79)'%3E%3Cpath d='M1.26712 930.505C282.006 910.881 526.902 865.58 546.48 763.174C578.097 596.069 -14.8778 410.455 14.2582 240.969C28.1855 159.353 186.06 83.3435 683.517 50.6629' stroke='%23E5A102' stroke-width='2' stroke-miterlimit='10'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    background-size: cover;
-    margin-top: -170px;
+    background-position: 100% 0%;
+    color: #fff;
+}
+.hero .inner {
+    padding: 90px 0;
+    max-width: 1250px;
+    margin: auto;
+}
+.hero .col-group .hero-col:first-child {
+    width: 60%;
+}
+.hero .col-group .hero-col:last-child {
+    width: 60%;
+}
+.hero .text-block {
+    padding-right: 100px;
+}
+.hero .text-block p {
+    font-size: 20px;
+    line-height: 34px;
 }
