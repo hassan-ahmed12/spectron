@@ -15,7 +15,14 @@
     width: 60%;
 }
 .hero .col-group .hero-col:last-child {
-    width: 60%;
+    width: 40%;
+}
+.hero h1 {
+    font-family: 'thicccboiblack';
+}
+.hero h1 span {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
 }
 .hero .text-block {
     padding-right: 100px;
