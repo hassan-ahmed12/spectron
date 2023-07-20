@@ -6,11 +6,6 @@
     background-position: 100% 0%;
     color: #fff;
 }
-.hero .inner {
-    padding: 90px 0;
-    max-width: 1250px;
-    margin: auto;
-}
 .hero .col-group .hero-col:first-child {
     width: 60%;
 }
