@@ -5,6 +5,8 @@
     background-repeat: no-repeat;
     background-position: 100% 0%;
     color: #fff;
+    padding: 100px 0;
+    height: 87vh;
 }
 .hero .col-group .hero-col:first-child {
     width: 60%;
@@ -14,6 +16,8 @@
 }
 .hero h1 {
     font-family: 'thicccboiblack';
+    font-size: 60px;
+    line-height: 60px;
 }
 .hero h1 span {
     -webkit-text-stroke: 1px white;

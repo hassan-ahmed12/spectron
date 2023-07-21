@@ -34,16 +34,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col"></div>
-                        <div class="col"><a href="+tel:+923379222295"><i class="fa fa-envelope" aria-hidden="true"></i> (+92)3379222295</a></div>
-                        <div class="col"><a href="mailto:hassanahmed12@live.com"><i class="fa fa-phone" aria-hidden="true"></i> hassanahmed12@live.com</a></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
                     </div>
                 </div>
             </div>
             <div class="fl-row hdr-row">
                 <div class="container">
                     <div class="row">
-                        <div class="col col-md-3 col-sm-1"><div class="main-logo"><a href="/spectron"><img src="https://i.postimg.cc/kgyDLNsZ/logo-2.png" alt="logo" width="200px"></a></div></div>
-                        <div class="col col-md-6 col-sm-1">
+                        <div class="col col-sm-9 col-lg-3"><div class="main-logo"><a href="/spectron"><img src="https://i.postimg.cc/kgyDLNsZ/logo-2.png" alt="logo" width="200px"></a></div></div>
+                        <div class="col col-sm-3 col-lg-6">
                             <nav class="head-menu">
                                 <ul>
                                     <li><a href="#">About</a></li>
@@ -54,10 +54,10 @@
                                 </ul>
                             </nav>
                             <div class="m-nav-btn">
-                                
+                                <img src="https://i.postimg.cc/j5kY8tST/menu.png" >
                             </div>
                         </div>
-                        <div class="col col-md-3 col-sm-1">
+                        <div class="col col-lg-3">
                             <div class="btn-box hdr-btn">
                                 <a href="" onclick="btnfun()">
                                     <div class="btn-icon">
