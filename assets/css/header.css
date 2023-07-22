@@ -158,6 +158,33 @@ div.hdr-btn a:hover:after {
     padding: 0;
 }
 
+.m-nav-btn img {
+    position: absolute;
+    right: 20px
+}
+.m-nav-btn .menu-close {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+div.m-nav-btn .menu-close-show {
+    animation: close-fancy 1s;
+    opacity: 1;
+}
+
+@keyframes close-fancy {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(90deg)}
+}
+
+div.m-nav-btn .hamburger-hide {
+    opacity: 0;
+    transition-delay: 0s;
+}
+.m-nav-btn .hamburger {
+    opacity: 1;
+    transition: opacity 0.3s;
+    transition-delay: 0.3s;
+}
 
 /***************** Media Queries *****************/
 @media (min-width: 991px) and (max-width: 1099px) {
@@ -169,17 +196,42 @@ div.hdr-btn a:hover:after {
     .hdr-row .row .col:last-child {
         display: none;
     }
-    
-    .hdr-row .head-menu{
-        display: none;
-    }
     .hdr-row .row .col:nth-child(2){
         justify-content: flex-end;
-        padding-right: 20px;
     }
     .m-nav-btn{
         display: block;
     }
+
+    .head-menu {
+        position: fixed;
+        float: none;
+        display: block;
+        background: #000;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transition: all ease 0.5s;
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    .head-menu.responsive {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all ease 0.5s;
+    }
+    .header-primary .hdr-row nav.head-menu ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .header-primary .hdr-row nav.head-menu ul li {
+        padding: 15px;
+    }
+
 }
 @media (max-width: 768px) {
     

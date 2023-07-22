@@ -44,7 +44,7 @@
                     <div class="row">
                         <div class="col col-sm-9 col-lg-3"><div class="main-logo"><a href="/spectron"><img src="https://i.postimg.cc/kgyDLNsZ/logo-2.png" alt="logo" width="200px"></a></div></div>
                         <div class="col col-sm-3 col-lg-6">
-                            <nav class="head-menu">
+                            <nav class="head-menu" id="hdr-menu">
                                 <ul>
                                     <li><a href="#">About</a></li>
                                     <li><a href="#">Portfolio</a></li>
@@ -53,15 +53,17 @@
                                     <li><a href="contact.php">Contact</a></li>
                                 </ul>
                             </nav>
-                            <div class="m-nav-btn">
-                                <img src="https://i.postimg.cc/j5kY8tST/menu.png" >
+                            <div class="m-nav-btn" id="m-nav-btn" onclick="MobileMenu()">
+                                <img src="https://i.postimg.cc/j5kY8tST/menu.png" class="hamburger" id="hamburger">
+                                <img src="https://i.postimg.cc/XJ54JCCJ/close.png" class="menu-close"  id="menu-close">
                             </div>
                         </div>
                         <div class="col col-lg-3">
                             <div class="btn-box hdr-btn">
                                 <a href="" onclick="btnfun()">
-                                    <div class="btn-icon">
+                                    <div class="btn-icon" onclick="myFunction()">
                                         <img src="https://i.postimg.cc/q7HZFm2d/shuttle-fill.png" height="16" width="16" alt="Shuttle Icon">
+                                        
                                     </div>
                                     <div class="btn-txt">Get Started</div>
                                 </a>
