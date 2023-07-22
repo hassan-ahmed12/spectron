@@ -31,4 +31,11 @@ function btnfun() {
       x.className = "menu-close";
     }
 
+    var x = document.getElementById("menu-logo");
+    if (x.className === "menu-logo") {
+      x.className += " top";
+    } else {
+      x.className = "menu-logo";
+    }
+
   }

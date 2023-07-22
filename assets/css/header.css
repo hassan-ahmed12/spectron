@@ -160,7 +160,10 @@ div.hdr-btn a:hover:after {
 
 .m-nav-btn img {
     position: absolute;
-    right: 20px
+    right: 1em;
+    margin: auto;
+    top: 0;
+    bottom: 0;
 }
 .m-nav-btn .menu-close {
     opacity: 0;
@@ -242,12 +245,6 @@ div.m-nav-btn .hamburger-hide {
     }
 }
 @media (max-width: 575px){
-    .hdr-row .row .col:first-child{
-        flex: 70%;
-    }
-    .hdr-row .row .col:nth-child(2){
-        flex: 30%;
-    }
     div.container {
         --bs-gutter-x: 2.5em;
     }

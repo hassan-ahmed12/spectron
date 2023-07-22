@@ -36,9 +36,9 @@ include("template/header.php");
             <div class="fl-row">
                 <div class="container">
                     <div class="row">
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="col col-md-3"></div>
+                    <div class="col col-md-3"></div>
+                    <div class="col col-md-3"></div>
                     </div>
                 </div>
             </div>
