@@ -3,8 +3,7 @@ $title ="Spectron Designs";
 include("template/header.php");
 ?>
     <main>
-        <div class="main-primary">
-            <div class="fl-row hero">
+        <div class="fl-row hero">
                      <div class="container">
                             <div class="row">
                                 <div class="col-xl-8">
@@ -33,16 +32,33 @@ include("template/header.php");
                     
             </div>
 
-            <div class="fl-row">
-                <div class="container">
-                    <div class="row">
-                    <div class="col col-md-3"></div>
-                    <div class="col col-md-3"></div>
-                    <div class="col col-md-3"></div>
+        <div class="fl-row about-us" id="about">
+            <div class="container">
+                <div class="row">
+                <div class="col col-md-3">
+                    <div class="yellow-box">
+                        <p>About Us</p>
                     </div>
+                    <div class="">
+                        
+                    </div>
+                </div>
+                <div class="col col-md-3"></div>
+                <div class="col col-md-3"></div>
                 </div>
             </div>
         </div>
+
+        <div class="fl-row">
+            <div class="container">
+                <div class="row">
+                <div class="col col-md-3"></div>
+                <div class="col col-md-3"></div>
+                <div class="col col-md-3"></div>
+                </div>
+            </div>
+        </div>
+
     </main>
 <?php
 include("template/footer.php");

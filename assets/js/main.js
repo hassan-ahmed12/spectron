@@ -17,6 +17,13 @@ function btnfun() {
       x.className = "head-menu";
     }
 
+    var x = document.getElementById("m-nav-btn");
+    if (x.className === "m-nav-btn") {
+      x.className += " draw";
+    } else {
+      x.className = "m-nav-btn";
+    }
+
     var x = document.getElementById("hamburger");
     if (x.className === "hamburger") {
       x.className += " hamburger-hide";

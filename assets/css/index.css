@@ -1,10 +1,10 @@
 /* Hero Section */
-.main-primary .hero {
-    background-color: #0f1825;
+.fl-row.hero {
+    background-color: var(--accent2);
     background-image: url("data:image/svg+xml,%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' width='595' height='894' viewBox='0 0 595 894' fill='none'%3E%3Cmask id='mask0_284_79' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='595' height='894'%3E%3Crect width='595' height='894' fill='%230F1825'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_284_79)'%3E%3Cpath d='M1.26712 930.505C282.006 910.881 526.902 865.58 546.48 763.174C578.097 596.069 -14.8778 410.455 14.2582 240.969C28.1855 159.353 186.06 83.3435 683.517 50.6629' stroke='%23E5A102' stroke-width='2' stroke-miterlimit='10'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: 100% 0%;
-    color: #fff;
+    color: var(--white);
     padding: 100px 0;
     height: fit-content;
 }
@@ -21,7 +21,7 @@
     text-transform: uppercase;
 }
 .hero h1 span {
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px var(--white);
     -webkit-text-fill-color: transparent;
 }
 .hero .text-block {
@@ -36,7 +36,7 @@
 
 /***************** Media Queries *****************/
 @media (min-width: 992px) and (max-width: 1199px) {
-    .main-primary .hero {
+    .fl-row.hero {
         padding-right: 20em;
         background-image: url("data:image/svg+xml,%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' width='316' height='521' viewBox='0 0 316 521' fill='none'%3E%3Cmask id='mask0_106_498' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='316' height='521'%3E%3Crect width='316' height='521' fill='%230F1825'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_106_498)'%3E%3Cpath d='M-106.65 650.971C116.768 685.869 316.708 694.236 350.381 617.527C405.07 492.294 -26.1747 240.721 26.9966 113.179C52.5205 51.7418 189.795 20.4729 585.308 83.9505' stroke='%23e5a102' stroke-width='2' stroke-miterlimit='10'/%3E%3C/g%3E%3C/svg%3E");
     }
@@ -47,7 +47,7 @@
     }
 }
 @media (max-width: 991px) {
-    .main-primary .hero {
+    .fl-row.hero {
         background-image: none;
     }
     .hero h1 {

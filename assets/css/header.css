@@ -152,7 +152,6 @@ div.hdr-btn a:hover:after {
 /* Mobile Nav */
 .m-nav-btn{
     display: none;
-    filter: invert(1);
 }
 .hdr-row .row .col:nth-child(2){
     padding: 0;
@@ -164,6 +163,7 @@ div.hdr-btn a:hover:after {
     margin: auto;
     top: 0;
     bottom: 0;
+    cursor: pointer;
 }
 .m-nav-btn .menu-close {
     opacity: 0;
@@ -172,6 +172,7 @@ div.hdr-btn a:hover:after {
 div.m-nav-btn .menu-close-show {
     animation: close-fancy 1s;
     opacity: 1;
+    transition-delay: 0.2s;
 }
 
 @keyframes close-fancy {
@@ -189,6 +190,7 @@ div.m-nav-btn .hamburger-hide {
     transition-delay: 0.3s;
 }
 
+
 /***************** Media Queries *****************/
 @media (min-width: 991px) and (max-width: 1099px) {
     .header-primary .hdr-row nav.head-menu ul li {
@@ -196,6 +198,9 @@ div.m-nav-btn .hamburger-hide {
     }
 }
 @media (max-width: 991px) {
+    .fl-row.hdr-row {
+        padding: 1em 0;
+    }
     .hdr-row .row .col:last-child {
         display: none;
     }
@@ -204,25 +209,27 @@ div.m-nav-btn .hamburger-hide {
     }
     .m-nav-btn{
         display: block;
+        filter: invert(1);
+    }
+    .m-nav-btn.draw {
+        position: fixed;
     }
 
     .head-menu {
         position: fixed;
         float: none;
         display: block;
-        background: #000;
+        background: var(--accent);
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
-        transition: all ease 0.5s;
-        opacity: 0;
-        transform: translateX(100%);
+        transition: all ease 0.8s;
+        transform: translateY(-120%);
     }
     .head-menu.responsive {
-        opacity: 1;
-        transform: translateX(0);
-        transition: all ease 0.5s;
+        transform: translateY(0);
+        transition: all ease 0.8s;
     }
     .header-primary .hdr-row nav.head-menu ul {
         height: 100%;
@@ -233,6 +240,18 @@ div.m-nav-btn .hamburger-hide {
     }
     .header-primary .hdr-row nav.head-menu ul li {
         padding: 15px;
+    }
+    .header-primary .hdr-row nav.head-menu::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        bottom: -19%;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(180deg);
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' standalone='no'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23e5a102' fill-opacity='1' d='M0,160L17.1,149.3C34.3,139,69,117,103,96C137.1,75,171,53,206,58.7C240,64,274,96,309,106.7C342.9,117,377,107,411,96C445.7,85,480,75,514,96C548.6,117,583,171,617,202.7C651.4,235,686,245,720,234.7C754.3,224,789,192,823,186.7C857.1,181,891,203,926,186.7C960,171,994,117,1029,106.7C1062.9,96,1097,128,1131,122.7C1165.7,117,1200,75,1234,96C1268.6,117,1303,203,1337,213.3C1371.4,224,1406,160,1423,128L1440,96L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
     }
 
 }
