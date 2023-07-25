@@ -14,13 +14,13 @@
     <!-- Custom JS Files -->
     <script src="assets/js/main.js"></script>
     <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/allstyle.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:wght@400;500;600&family=Bungee+Shade&display=swap" rel="stylesheet">
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="assets/fonts/stylesheet.css" type="text/css" charset="utf-8" />
     <!-- Favicon -->
@@ -46,7 +46,7 @@
                         <div class="col col-3 col-sm-3 col-lg-6">
                             <nav class="head-menu" id="hdr-menu">
                                 <ul>
-                                    <li><a href="#">About</a></li>
+                                    <li><a href="#about">About</a></li>
                                     <li><a href="#">Portfolio</a></li>
                                     <li><a href="#">Services</a></li>
                                     <li><a href="#">Team</a></li>
@@ -61,7 +61,7 @@
                         <div class="col col-lg-3">
                             <div class="btn-box hdr-btn">
                                 <a href="" onclick="btnfun()">
-                                    <div class="btn-icon" onclick="myFunction()">
+                                    <div class="btn-icon">
                                         <img src="https://i.postimg.cc/q7HZFm2d/shuttle-fill.png" height="16" width="16" alt="Shuttle Icon">
                                         
                                     </div>

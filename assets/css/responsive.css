@@ -1,0 +1,88 @@
+@media (min-width: 992px) and (max-width: 1499px) {
+    .fl-row.hero {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' width='316' height='521' viewBox='0 0 316 521' fill='none'%3E%3Cmask id='mask0_106_498' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='316' height='521'%3E%3Crect width='316' height='521' fill='%230F1825'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_106_498)'%3E%3Cpath d='M-106.65 650.971C116.768 685.869 316.708 694.236 350.381 617.527C405.07 492.294 -26.1747 240.721 26.9966 113.179C52.5205 51.7418 189.795 20.4729 585.308 83.9505' stroke='%23e5a102' stroke-width='2' stroke-miterlimit='10'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero h1 {
+        font-size: 50px;
+        line-height: 50px
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fl-row.hero {
+        padding-right: 20em;
+    }
+}
+@media (max-width: 991px) {
+    .fl-row.hero {
+        background-image: none;
+        padding: 7em 0;
+    }
+    .hero h1 {
+        font-size: 46px;
+        line-height: 54px;
+    }
+    .hero .text-block {
+        padding: 0;
+    }
+    .hero .text-block p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .fl-row.about-us .col:nth-child(3)::after {
+        display: none;
+    }
+    .fl-row.about-us .col:nth-child(1) {
+        padding-bottom: 120px;
+    }
+    
+    
+}
+@media (min-width: 769px) and (max-width: 991px) {
+    .fl-row.about-us .col:nth-child(1) {
+        order: 1;
+    }
+    .fl-row.about-us .col:nth-child(2) {
+        order: 3;
+        margin-top: -50px
+    }
+    .fl-row.about-us .col:nth-child(3) {
+        order: 2;
+    }
+    .fl-row.about-us .col-12{
+        order: 4;
+    }
+    
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .fl-row.about-us .col:nth-child(2){
+        margin-top: 0;
+    }   
+    .row-bottom {
+        display: none;
+    } 
+    .fl-row.about-us .col:nth-child(2)::before {
+        top: -50px;
+        left: 0;
+    }
+    .fl-row.about-us {
+        padding: 0;
+    }
+    .fl-row.about-us .col {
+        padding: 4em 2em;
+    }
+}
+@media (max-width: 500px) {
+    div.dual-buttons {
+        flex-direction: column;
+    }
+    .dual-buttons div.btn-box a {
+        width: 100%;
+    }
+    div.dual-buttons .btn-2 {
+        margin:  20px 0px 0px 0;
+    }
+}
