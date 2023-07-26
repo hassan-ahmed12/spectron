@@ -6,7 +6,7 @@
 //   });
 
 function btnfun() {
-    alert("Fuck off!");
+    alert("Fuck You!");
   }
 
   function MobileMenu() {
@@ -46,3 +46,22 @@ function btnfun() {
     }
 
   }
+
+  // Jquery code to add active class on menu
+  $(document).ready(function() {
+    $("[href]").each(function() {
+      if (this.href == window.location.href) {
+        $(this).addClass("active");
+      }
+    });
+  });
+
+  // // Jquery code to add class on click function
+  // $(document).ready(function(){
+  //   $('.head-menu ul li').click(function(){
+  //     $('.head-menu li').removeClass("active");
+  //     $(this).addClass("active");
+  // });
+  // });
+
+

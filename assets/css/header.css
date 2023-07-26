@@ -189,7 +189,6 @@ div.m-nav-btn .hamburger-hide {
     transition-delay: 0.3s;
 }
 
-
 /***************** Media Queries *****************/
 @media (min-width: 991px) and (max-width: 1099px) {
     .header-primary .hdr-row nav.head-menu ul li {
