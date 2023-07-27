@@ -14,28 +14,28 @@
 }
 
 /* Navigation */
-.header-primary .hdr-row nav.head-menu {
+.header-primary nav.head-menu {
     text-align: center;
     width: 100%;
 } 
-.header-primary .hdr-row nav.head-menu ul {
+.header-primary nav.head-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 } 
-.header-primary .hdr-row nav.head-menu ul li {  
+.header-primary nav.head-menu ul li {  
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 5px;
 }
-.header-primary .hdr-row nav.head-menu ul li a{
+.header-primary nav.head-menu ul li a{
     text-decoration: none;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     position: relative;
-    padding: 10px 0;
+    padding: 10px;
 }
-.header-primary .hdr-row nav.head-menu ul li a:before {
+.header-primary nav.head-menu ul li a:before {
     content: '';
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
@@ -49,10 +49,13 @@
     opacity: 0;
     border-radius: 50%;
 }
-.header-primary .hdr-row nav.head-menu ul li a:hover:before {
+.header-primary nav.head-menu ul li a:hover:before {
     transform: translateY(-12px);
     transition: all ease 0.3s;
     opacity: 1;
+}
+.header-primary nav.head-menu ul li a.active {
+
 }
 
 /* Header Button */
@@ -190,11 +193,7 @@ div.m-nav-btn .hamburger-hide {
 }
 
 /***************** Media Queries *****************/
-@media (min-width: 991px) and (max-width: 1099px) {
-    .header-primary .hdr-row nav.head-menu ul li {
-        margin: 0 11px;
-    }
-}
+
 @media (max-width: 991px) {
     .fl-row.hdr-row {
         padding: 1em 0;
