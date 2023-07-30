@@ -42,7 +42,13 @@
             <div class="fl-row hdr-row">
                 <div class="container">
                     <div class="row">
-                        <div class="col col-9 col-sm-9 col-lg-3"><div class="main-logo"><a href="/spectron" class="menu-logo" id="menu-logo"><img src="https://i.postimg.cc/kgyDLNsZ/logo-2.png" alt="logo" width="200px"></a></div></div>
+                        <div class="col col-9 col-sm-9 col-lg-3">
+                            <div class="main-logo">
+                                <a href="/spectron" class="menu-logo" id="menu-logo">
+                                    <img src="https://i.postimg.cc/054d53QQ/spectron-logo.png" alt="logo" width="200px">
+                                </a>
+                            </div>
+                        </div>
                         <div class="col col-3 col-sm-3 col-lg-6">
                             <nav class="head-menu" id="hdr-menu">
                                 <ul>
