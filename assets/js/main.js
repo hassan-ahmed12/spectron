@@ -47,26 +47,31 @@ function btnfun() {
 
   }
 
-  // Jquery code to add active class on menu by url
-  $(document).ready(function() {
-    $("[href]").each(function() {
-      if (this.href == window.location.href) {
-        $(this).addClass("active");
-      }
-    });
+// Jquery code to add active class on menu by url
+$(document).ready(function() {
+  $("[href]").each(function() {
+    if (this.href == window.location.href) {
+      $(this).addClass("active");
+    }
   });
+});
 
-  // Sticky header
-window.onscroll = function() {myFunction()};
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
+// Sticky header
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', myFunctionForSticky);
+  window.onscroll = function() {myFunctionForSticky()};
+
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunctionForSticky() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
   }
-}
+})
 
   // // Jquery code to add class on click function
   // $(document).ready(function(){

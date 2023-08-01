@@ -1,4 +1,4 @@
-:root {
+    :root {
     --white: #ffffff;
     --accent: #E5A102;
     --accent2: #0f1825;
@@ -13,6 +13,10 @@ body {
     line-height: 1.6;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
+}
+main {
+    background-color: var(--accent2);
+    padding-top: 7.5em;
 }
 h1, h2, h3, h4 {
     font-family: 'thicccboibold';
@@ -36,6 +40,7 @@ h4 {
 }
 .fl-row {
     padding: 2em 0;
+    
 }
 a, a:focus, a:visited{
     text-decoration: none;
@@ -128,7 +133,6 @@ div.btn-box a {
 
 /* Hero Section */
 .fl-row.hero {
-    background-color: var(--accent2);
     background-image: url("data:image/svg+xml,%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' width='595' height='894' viewBox='0 0 595 894' fill='none'%3E%3Cmask id='mask0_284_79' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='595' height='894'%3E%3Crect width='595' height='894' fill='%230F1825'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_284_79)'%3E%3Cpath d='M1.26712 930.505C282.006 910.881 526.902 865.58 546.48 763.174C578.097 596.069 -14.8778 410.455 14.2582 240.969C28.1855 159.353 186.06 83.3435 683.517 50.6629' stroke='%23E5A102' stroke-width='2' stroke-miterlimit='10'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: 100% 0%;
@@ -144,8 +148,8 @@ div.btn-box a {
 }
 .hero h1 {
     font-family: 'thicccboiblack';
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 56px;
+    line-height: 56px;
     text-transform: uppercase;
 }
 .hero h1 span {
@@ -159,6 +163,17 @@ div.btn-box a {
     font-size: 20px;
     line-height: 34px;
 }
+@keyframes rotate-obj {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(1800deg);}
+    100% {transform: rotate(360deg);}
+}
+.hero .image-box.anim-img img{
+    animation: rotate-obj 15s infinite linear;
+    translate: 150px 100px;
+    filter: brightness(0) saturate(100%) invert(54%) sepia(100%) saturate(673%) hue-rotate(7deg) brightness(98%) contrast(98%);
+}
+
 
 /* About Us Section */
 .fl-row.about-us {
@@ -282,9 +297,9 @@ div.btn-box a {
 
 @keyframes pulse-animation {
     0% {
-      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
     }
     100% {
-      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
     }
-  }
+}

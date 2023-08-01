@@ -1,11 +1,21 @@
 .header-main {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 10;
     background-color: #0f1825;
+    transition: all ease 0.6s;
 }
 .hdr-row .row .col {
     display: flex;
     align-items: center;
+}
+.sticky .hdr-row{
+    padding: 1em 0;
+    transition: all ease 0.6s;
+}
+.hdr-row{
+    transition: all ease 0.6s;
 }
 
 /* Top Bar */

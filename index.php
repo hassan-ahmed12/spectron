@@ -26,7 +26,11 @@ include("template/header.php");
                             </div>
                     </div>
                 </div>
-                <div class="col-xl-4"></div>
+                <div class="col-xl-4">
+                    <div class="image-box anim-img">
+                        <img src="https://i.postimg.cc/bvg1m9sh/settings.png" >
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -51,7 +55,7 @@ include("template/header.php");
                 </div>
                 <div class="col col-12 col-md-6 col-lg-4">
                     <div class="icon-box">
-                        <img src="https://i.postimg.cc/Z0tMg3Hm/web-design.png" alr="UX Deisgn">
+                        <img src="https://i.postimg.cc/Z0tMg3Hm/web-design.png" alt="UX Deisgn">
                     </div>
                     <div class="heading">
                         <h4>Web Design</h4>
@@ -70,7 +74,7 @@ include("template/header.php");
                 </div>
                 <div class="col col-12 col-md-6 col-lg-4">
                     <div class="icon-box style-2">
-                        <img src="https://i.postimg.cc/LstzSWpG/coding.png" alr="Development">
+                        <img src="https://i.postimg.cc/LstzSWpG/coding.png" alt="Development">
                     </div>
                     <div class="heading">
                         <h4>Development</h4>
