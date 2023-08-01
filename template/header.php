@@ -28,55 +28,55 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-primary">
-            <div class="fl-row top-bar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                    </div>
+    <header class="header-main" id="header">
+        <div class="fl-row top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
                 </div>
             </div>
-            <div class="fl-row hdr-row">
-                <div class="container">
-                    <div class="row">
-                        <div class="col col-9 col-sm-9 col-lg-3">
-                            <div class="main-logo">
-                                <a href="/spectron" class="menu-logo" id="menu-logo">
-                                    <img src="https://i.postimg.cc/054d53QQ/spectron-logo.png" alt="logo" width="200px">
-                                </a>
-                            </div>
+        </div>
+        <div class="fl-row hdr-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-9 col-sm-9 col-lg-3">
+                        <div class="main-logo">
+                            <a href="/spectron" class="menu-logo" id="menu-logo">
+                                <img src="https://i.postimg.cc/054d53QQ/spectron-logo.png" alt="logo" width="200px">
+                            </a>
                         </div>
-                        <div class="col col-3 col-sm-3 col-lg-6">
-                            <nav class="head-menu" id="hdr-menu">
-                                <ul>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Team</a></li>
-                                    <li><a href="contact.php">Contact</a></li>
-                                </ul>
-                            </nav>
-                            <div class="m-nav-btn" id="m-nav-btn" onclick="MobileMenu()">
-                                <img src="https://i.postimg.cc/j5kY8tST/menu.png" class="hamburger" id="hamburger">
-                                <img src="https://i.postimg.cc/XJ54JCCJ/close.png" class="menu-close"  id="menu-close">
-                            </div>
+                    </div>
+                    <div class="col col-3 col-sm-3 col-lg-6">
+                        <nav class="head-menu" id="hdr-menu">
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="contact.php">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="m-nav-btn" id="m-nav-btn" onclick="MobileMenu()">
+                            <img src="https://i.postimg.cc/j5kY8tST/menu.png" class="hamburger" id="hamburger">
+                            <img src="https://i.postimg.cc/XJ54JCCJ/close.png" class="menu-close"  id="menu-close">
                         </div>
-                        <div class="col col-lg-3">
-                            <div class="btn-box hdr-btn">
-                                <a href="" onclick="btnfun()">
-                                    <div class="btn-icon">
-                                        <img src="https://i.postimg.cc/q7HZFm2d/shuttle-fill.png" height="16" width="16" alt="Shuttle Icon">
-                                        
-                                    </div>
-                                    <div class="btn-txt">Get Started</div>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="col col-lg-3">
+                        <div class="btn-box hdr-btn">
+                            <a href="" onclick="btnfun()">
+                                <div class="btn-icon">
+                                    <img src="https://i.postimg.cc/q7HZFm2d/shuttle-fill.png" height="16" width="16" alt="Shuttle Icon">
+                                    
+                                </div>
+                                <div class="btn-txt">Get Started</div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <main>

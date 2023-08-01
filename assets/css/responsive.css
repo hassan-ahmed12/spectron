@@ -60,9 +60,6 @@
     }
     .fl-row.about-us .col:nth-child(2){
         margin-top: 0;
-    }   
-    .row-bottom {
-        display: none;
     } 
     .fl-row.about-us .col:nth-child(2)::before {
         top: -50px;
@@ -73,6 +70,11 @@
     }
     .fl-row.about-us .col {
         padding: 4em 2em;
+    }
+}
+@media (max-width: 767px) {  
+    .row-bottom {
+        display: none;
     }
 }
 @media (max-width: 500px) {

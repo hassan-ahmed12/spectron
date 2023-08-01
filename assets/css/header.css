@@ -1,4 +1,4 @@
-.header-primary {
+.header-main {
     position: relative;
     z-index: 10;
     background-color: #0f1825;
@@ -9,25 +9,25 @@
 }
 
 /* Top Bar */
-.header-primary .top-bar {
+.header-main .top-bar {
     display: none;
 }
 
 /* Navigation */
-.header-primary nav.head-menu {
+.header-main nav.head-menu {
     text-align: center;
     width: 100%;
 } 
-.header-primary nav.head-menu ul {
+.header-main nav.head-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 } 
-.header-primary nav.head-menu ul li {  
+.header-main nav.head-menu ul li {  
     display: inline-block;
     margin: 0 5px;
 }
-.header-primary nav.head-menu ul li a{
+.header-main nav.head-menu ul li a{
     text-decoration: none;
     color: #fff;
     font-family: 'Poppins', sans-serif;
@@ -35,7 +35,7 @@
     position: relative;
     padding: 10px;
 }
-.header-primary nav.head-menu ul li a:before {
+.header-main nav.head-menu ul li a:before {
     content: '';
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
@@ -49,12 +49,12 @@
     opacity: 0;
     border-radius: 50%;
 }
-.header-primary nav.head-menu ul li a:hover:before {
+.header-main nav.head-menu ul li a:hover:before {
     transform: translateY(-12px);
     transition: all ease 0.3s;
     opacity: 1;
 }
-.header-primary nav.head-menu ul li a.active {
+.header-main nav.head-menu ul li a.active {
 
 }
 
@@ -192,6 +192,19 @@ div.m-nav-btn .hamburger-hide {
     transition-delay: 0.3s;
 }
 
+.menu-logo.top img {
+    position: relative;
+    z-index: 999;
+    filter: brightness(0) invert(1);
+    animation: mob-logo 1s;
+}
+
+@keyframes mob-logo {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
 /***************** Media Queries *****************/
 
 @media (max-width: 991px) {
@@ -228,17 +241,17 @@ div.m-nav-btn .hamburger-hide {
         transform: translateY(0);
         transition: all ease 0.8s;
     }
-    .header-primary .hdr-row nav.head-menu ul {
+    .header-main .hdr-row nav.head-menu ul {
         height: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
     }
-    .header-primary .hdr-row nav.head-menu ul li {
+    .header-main .hdr-row nav.head-menu ul li {
         padding: 15px;
     }
-    .header-primary .hdr-row nav.head-menu::after {
+    .header-main .hdr-row nav.head-menu::after {
         content: '';
         position: absolute;
         width: 100%;

@@ -1,3 +1,4 @@
+</main>
 <footer>
         <div class="footer-primary page">
             <div class="fl-row row-fixed">
