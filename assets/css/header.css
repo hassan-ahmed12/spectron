@@ -77,9 +77,6 @@ div.hdr-btn a {
     justify-content: center;
     transition: all 0.5s;
 }
-div.hdr-btn a:hover {
-    color: var(--accent);
-}
 div.hdr-btn a .btn-icon {
     transition: all 0.5s;
     position: relative;
@@ -129,8 +126,10 @@ div.hdr-btn a:before {
     position: absolute;
     top: 0;
     left: 0;
-    border-top: solid 2px var(--accent);
-    border-left: solid 2px var(--accent);
+    border-top: solid 2px;
+    border-left: solid 2px;
+    border-image: linear-gradient(291deg, rgba(229,161,2,1) 0%, rgba(0,128,128,1) 100%);
+    border-image-slice: 1;
     transition: all 0.6s;
     z-index: 0;
 }
@@ -145,8 +144,10 @@ div.hdr-btn a:after {
     position: absolute;
     bottom: 0;
     right: 0;
-    border-right: solid 2px var(--accent);
-    border-bottom: solid 2px var(--accent);
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+    border-image: linear-gradient(291deg, rgba(229,161,2,1) 0%, rgba(0,128,128,1) 100%);
+    border-image-slice: 1;
     transition: all 0.6s;
     z-index: 0;
 }

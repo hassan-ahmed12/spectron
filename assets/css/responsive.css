@@ -1,3 +1,8 @@
+@media (max-width: 1499px) {
+    .hero .image-box.anim-img img {
+        display: none;
+    }
+}
 @media (min-width: 992px) and (max-width: 1499px) {
     .fl-row.hero {
         background-image: url("data:image/svg+xml,%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' width='316' height='521' viewBox='0 0 316 521' fill='none'%3E%3Cmask id='mask0_106_498' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='316' height='521'%3E%3Crect width='316' height='521' fill='%230F1825'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_106_498)'%3E%3Cpath d='M-106.65 650.971C116.768 685.869 316.708 694.236 350.381 617.527C405.07 492.294 -26.1747 240.721 26.9966 113.179C52.5205 51.7418 189.795 20.4729 585.308 83.9505' stroke='%23e5a102' stroke-width='2' stroke-miterlimit='10'/%3E%3C/g%3E%3C/svg%3E");
