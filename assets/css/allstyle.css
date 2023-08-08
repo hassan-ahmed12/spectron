@@ -42,9 +42,8 @@ h4 {
     padding: 2em 0;
     
 }
-a, a:focus, a:visited{
+body a, body a:focus, body a:visited{
     text-decoration: none;
-    color: var(--white);
 }
 /* Global Button */
 div.btn-box a {
@@ -68,24 +67,37 @@ div.btn-box a {
 }
 .dual-buttons .btn-1 a {
     border: 2px solid var(--white);
-    transition: all ease 0.3s;
+    transition: all ease 0.5s;
 }
 .dual-buttons .btn-1 a:hover {
     color: var(--accent2);
+}
+.dual-buttons .btn-1 a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 6px solid;
+    border-left-color: var(--white);
+    border-right-color: transparent;
+    border-top-color: var(--white);
+    border-bottom-color: transparent;
 }
 .dual-buttons .btn-1 a:after {
     content: "";
     position: absolute;
     height: 0%;
-    width: 100%;
+    width: 0%;
     background: var(--white);
     top: 0;
     left: 0;
-    transition: all ease .4s;
+    transition: all ease .5s;
     z-index: -1;
 }
 .dual-buttons .btn-1 a:hover:after {
     height: 100%;
+    width: 100%;
+    transition: all ease .5s;
 }
 .dual-buttons .btn-2 {
     margin-left: 30px;
@@ -95,11 +107,24 @@ div.btn-box a {
     border: 2px solid;
     border-image: linear-gradient(291deg, rgba(229,161,2,1) 0%, rgba(0,128,128,1) 100%);
     border-image-slice: 1;
+    transition: all ease .5s;
 }
 .dual-buttons .btn-2 a:hover .btn-txt {
     background: -webkit-linear-gradient(145deg, rgba(229,161,2,1) 0%, rgba(0,128,128,1) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.dual-buttons .btn-2 a::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 6px solid;
+    border-left-color: transparent;
+    border-right-color: var(--accent);
+    border-top-color: transparent;
+    border-bottom-color: var(--accent);
 }
 .dual-buttons .btn-2 a:after {
     content: "";
@@ -109,12 +134,14 @@ div.btn-box a {
     background: var(--accent);
     background-image: linear-gradient(291deg, rgba(229,161,2,1) 0%, rgba(0,128,128,1) 100%);
     bottom: 0;
-    left: 0;
-    transition: all ease .4s;
+    right: 0;
+    transition: all ease .5s;
     z-index: -1;
 }
 .dual-buttons .btn-2 a:hover:after {
     height: 0%;
+    width: 0%;
+    transition: all ease 0.7s;
 }
 
 /* Row Bottom Text */

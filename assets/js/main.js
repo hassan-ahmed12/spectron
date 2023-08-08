@@ -67,6 +67,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 })
 
+// OwlCarousel
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
   // // Jquery code to add class on click function
   // $(document).ready(function(){
   //   $('.head-menu ul li').click(function(){

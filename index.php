@@ -104,6 +104,26 @@ include("template/header.php");
     <div class="fl-row">
         <div class="container">
             <div class="row">
+                <div class="col col-12">
+                    <div class="owl-carousel owl-theme">
+                        <div> <img src="https://i.postimg.cc/zXS0g7wY/stock-1.jpg"> </div>
+                        <div> <img src="https://i.postimg.cc/L40Y68B0/stock-2.jpg"> </div>
+                        <div> <img src="https://i.postimg.cc/zXS0g7wY/stock-1.jpg"> </div>
+                        <div> <img src="https://i.postimg.cc/L40Y68B0/stock-2.jpg"> </div>
+                        <div> <img src="https://i.postimg.cc/zXS0g7wY/stock-1.jpg"> </div>
+                        <div> <img src="https://i.postimg.cc/L40Y68B0/stock-2.jpg"> </div>
+                        <div> <img src="https://i.postimg.cc/zXS0g7wY/stock-1.jpg"> </div>
+                        <div> <img src="https://i.postimg.cc/L40Y68B0/stock-2.jpg"> </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fl-row">
+        <div class="container">
+            <div class="row">
                 <div class="col col-md-3"></div>
                 <div class="col col-md-3"></div>
                 <div class="col col-md-3"></div>
