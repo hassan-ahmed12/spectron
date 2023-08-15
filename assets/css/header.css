@@ -258,10 +258,23 @@ div.m-nav-btn .hamburger-hide {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
+        z-index: 5;
+        position: relative;
     }
     .header-main .hdr-row nav.head-menu ul li {
         padding: 15px;
     }
+    .header-main .hdr-row nav.head-menu::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 120%;
+        background: #000;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0.15;
+    }    
     .header-main .hdr-row nav.head-menu::after {
         content: '';
         position: absolute;

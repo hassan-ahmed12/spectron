@@ -13,8 +13,8 @@
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-    .fl-row.hero {
-        padding-right: 20em;
+    .fl-row.hero .col-xl-8 {
+        padding-right: 5em;
     }
 }
 @media (max-width: 991px) {

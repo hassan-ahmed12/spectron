@@ -19,10 +19,10 @@
 
 
     </footer>
-    <!-- Custom JS -->
-    <script src="assets/js/main.js" ></script>
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js" ></script>
     <!-- Fontwesome -->
     <script src="https://use.fontawesome.com/3f38d47325.js"></script>
     <!-- Bootstrap -->
