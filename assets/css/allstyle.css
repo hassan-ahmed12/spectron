@@ -294,7 +294,7 @@ div.btn-box a {
 }
 .yellow-box {
     width: fit-content;
-    padding: 10px 15px 25px 15px;
+    padding: 4px 4px 21px 4.5px;
     background: var(--accent1);
     margin-bottom: 15px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
@@ -302,6 +302,9 @@ div.btn-box a {
 .yellow-box p {
     margin: 0;
     font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: var(--accent3);
 }
 .fl-row.about-us .col:nth-child(2)::before {
     content: '';

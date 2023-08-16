@@ -88,9 +88,6 @@ div.hdr-btn a .btn-icon img {
 div.hdr-btn a:hover .btn-icon {
     animation: get-start-icn infinite 1.5s;
 }
-div.hdr-btn a:hover .btn-icon img {
-    /* filter: brightness(0) saturate(100%) invert(70%) sepia(27%) saturate(3767%) hue-rotate(5deg) brightness(94%) contrast(102%); */
-}
 @keyframes get-start-icn {
     0%   {transform: translate(0)}
     50%  {transform: translate(4px, -4px)}
@@ -218,7 +215,7 @@ div.m-nav-btn .hamburger-hide {
 
 /***************** Media Queries *****************/
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .fl-row.hdr-row {
         padding: 1em 0;
     }
