@@ -15,30 +15,32 @@ body {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
-p {
+body p {
     font-family: 'Montserrat', sans-serif;
+    color: var(--white);
 }
 main {
     background-color: var(--accent2);
     padding-top: 7.5em;
 }
-h1, h2, h3, h4 {
+body h1, body h2, body h3, body h4 {
     font-family: 'thicccboibold';
     margin-top: 0;
+    color: var(--white);;
 }
-h1 {
-    font-size: 55px;
-    line-height: 65px;
+body h1 {
+    font-size: 52px;
+    line-height: 60px;
 }
-h2 {
+body h2 {
     font-size: 46px;
     line-height: 56px;
 }
-h3 {
+body h3 {
     font-size: 34px;
     line-height: 44px;
 }
-h4 {
+body h4 {
     font-size: 26px;
     line-height: 26px;
 }
@@ -399,4 +401,39 @@ div.btn-box a {
     100% {
         box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
     }
+}
+
+/* Our Technologies Section*/
+
+/* Owl Carousel */
+.tech-slider-box .owl-carousel .owl-item img {
+    width: fit-content;
+    filter: brightness(0) saturate(100%) invert(72%) sepia(62%) saturate(3817%) hue-rotate(8deg) brightness(99%) contrast(98%);
+}
+.tech-slider-box .owl-carousel.owl-drag .owl-item .item {
+    padding: 70px 60px;
+    background-color: var(--accent3);
+    width: 400px;
+}
+.fl-row.tech-slider {
+    padding: 5em 0;
+}
+.fl-row.tech-slider .row {
+    position: relative;
+}
+.fl-row.tech-slider .row .col:first-child {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.fl-row.tech-slider .row .col:last-child {
+    width: 100%;
+    margin-left: 33%;
+}
+.tech-slider-box .owl-theme .owl-dots {
+    text-align: left;
+    top: 10px;
+    position: relative;
 }

@@ -101,12 +101,54 @@ include("template/header.php");
         </div>
     </div>
 
-    <div class="fl-row">
+    <div class="fl-row tech-slider">
         <div class="container">
             <div class="row">
-                <div class="col col-12">
-                    
-                    
+                <div class="col col-3">
+                    <div class="heading">
+                        <h2>Our Technologies</h2>
+                    </div>
+                    <div class="text-block">
+                        <p>Quality is our Priority</p>
+                    </div>
+                </div>
+                <div class="col col-8">
+                    <div class="tech-slider-box">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="icon-box">
+                                    <img src="https://i.postimg.cc/Bvjkw72c/security.png">
+                                </div>
+                                <div class="text-block">
+                                    <p>Engineering modern business to improve everyday lives</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-box">
+                                    <img src="https://i.postimg.cc/9XsXrx9w/charts.png">
+                                </div>
+                                <div class="text-block">
+                                    <p>Harness your data's potential and enable your institution</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-box">
+                                    <img src="https://i.postimg.cc/GmCcjHqc/radio.png">
+                                </div>
+                                <div class="text-block">
+                                    <p>Examine data and construct AI to enhance human potential</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-box">
+                                    <img src="https://i.postimg.cc/kX8J8xN1/wrench.png">
+                                </div>
+                                <div class="text-block">
+                                    <p>Creating advanced technologies supported by an adaptable framework</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,17 +163,6 @@ include("template/header.php");
             </div>
         </div>
     </div>
-
-    <div class="owl-carousel owl-theme">
-                        <div class="item"> <img src="https://i.postimg.cc/zXS0g7wY/stock-1.jpg"> </div>
-                        <div class="item"> <img src="https://i.postimg.cc/L40Y68B0/stock-2.jpg"> </div>
-                        <div class="item"> <img src="https://i.postimg.cc/zXS0g7wY/stock-1.jpg"> </div>
-                        <div class="item"> <img src="https://i.postimg.cc/L40Y68B0/stock-2.jpg"> </div>
-                        <div class="item"> <img src="https://i.postimg.cc/zXS0g7wY/stock-1.jpg"> </div>
-                        <div class="item"> <img src="https://i.postimg.cc/L40Y68B0/stock-2.jpg"> </div>
-                        <div class="item"> <img src="https://i.postimg.cc/zXS0g7wY/stock-1.jpg"> </div>
-                        <div class="item"> <img src="https://i.postimg.cc/L40Y68B0/stock-2.jpg"> </div>
-                    </div>
 
 </div>
 
