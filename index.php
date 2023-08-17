@@ -35,7 +35,7 @@ include("template/header.php");
         </div>
     </div>
 
-    <div class="fl-row about-us" id="about">
+    <div class="fl-row about-us alt-bg" id="about">
         <div class="container">
             <div class="row">
                 <div class="col col-12 col-lg-4">
@@ -95,7 +95,7 @@ include("template/header.php");
                 <div class="col-12">
                     <div class="row-bottom style-2">
                         <span>SPECTRON</span>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@ include("template/header.php");
                         <p>Quality is our Priority</p>
                     </div>
                 </div>
-                <div class="col col-8">
+                <div class="col col-9">
                     <div class="tech-slider-box">
                         <div class="owl-carousel owl-theme">
                             <div class="item">
@@ -150,6 +150,22 @@ include("template/header.php");
                         </div>
                     </div>
                 </div>
+
+                <div class="col-12">
+                    <div class="row-bottom style-1">
+                        <span>SPECTRON</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fl-row alt-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-3"></div>
+                <div class="col col-md-3"></div>
+                <div class="col col-md-3"></div>
             </div>
         </div>
     </div>
