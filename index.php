@@ -6,7 +6,7 @@ include("template/header.php");
     <div class="fl-row hero">
         <div class="container">
             <div class="row">
-                <div class="col-xl-8">
+                <div class="col-12 col-xl-8">
                     <div class="heading">
                         <h1>Unlock Your <br><span>Business Potential</span><br>with a Stunning Website</h1>
                     </div>

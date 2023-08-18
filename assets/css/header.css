@@ -215,7 +215,7 @@ div.m-nav-btn .hamburger-hide {
 
 /***************** Media Queries *****************/
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .fl-row.hdr-row {
         padding: 1em 0;
     }

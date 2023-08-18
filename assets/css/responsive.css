@@ -18,6 +18,13 @@
     }
 }
 @media (max-width: 991px) {
+    main {
+        padding-top: 5.5em;
+    }
+    body .container {
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
     .fl-row.hero {
         background-image: none;
         padding: 7em 0;
@@ -42,7 +49,7 @@
     
     
 }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .fl-row.about-us .col:nth-child(1) {
         order: 1;
     }
@@ -60,8 +67,29 @@
 }
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 36px;
+        font-size: 40px;
         line-height: 44px;
+    }
+    .fl-row.about-us {
+        padding: 0;
+    }
+    .fl-row.about-us .col {
+        padding: 4em 2em;
+    }
+    .fl-row.about-us .col:nth-child(1){
+        padding: 3em 12px;
+        padding-bottom: 80px;
+    }
+    .fl-row.hero{
+        padding: 4em 0;
+    }
+}
+@media (max-width: 767px) {  
+    .row-bottom {
+        display: none;
+    }
+    .about-us .container{
+        padding-bottom: 30px
     }
     .fl-row.about-us .col:nth-child(2){
         margin-top: 0;
@@ -70,19 +98,11 @@
         top: -50px;
         left: 0;
     }
-    .fl-row.about-us {
-        padding: 0;
-    }
-    .fl-row.about-us .col {
-        padding: 4em 2em;
-    }
-}
-@media (max-width: 767px) {  
-    .row-bottom {
-        display: none;
-    }
 }
 @media (max-width: 500px) {
+    .hero h1 {
+        font-size: 36px;
+    }
     div.dual-buttons {
         flex-direction: column;
     }
