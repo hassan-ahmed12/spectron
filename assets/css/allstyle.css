@@ -446,18 +446,22 @@ div.btn-box a {
     font-size: 18px;
 }
 .tech-slider-box .owl-theme .owl-dots {
-    text-align: left;
     top: 20px;
     position: relative;
     display: flex;
+    justify-content: flex-start;
 }
 .tech-slider-box .owl-theme .owl-dots .owl-dot.active span {
     background: var(--accent);
     transition: all ease-in-out 0.4s;
     opacity: 1;
-    box-shadow: 0 0 20px var(--accent);
+    box-shadow: 0 0 4px var(--accent);
+    transform: scale(2);
 }
 .tech-slider-box .owl-theme .owl-dots .owl-dot span {
     transition: all ease-in-out 0.4s;
     opacity: 0.5;
+    width: 8px;
+    height: 8px;
+    margin: 5px 9px;
 }

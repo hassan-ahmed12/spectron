@@ -46,6 +46,18 @@
     .fl-row.about-us .col:nth-child(1) {
         padding-bottom: 120px;
     }
+    .fl-row.tech-slider .row .col:first-child{
+        padding-top: 0;
+        padding-bottom: 2em;
+        position: relative;
+    }
+    .fl-row.tech-slider .row .col:nth-child(2){
+        margin-left: auto;
+    }
+    .tech-slider-box .owl-theme .owl-dots{
+        padding-top: 20px;
+        justify-content: center;
+    }
     
     
 }

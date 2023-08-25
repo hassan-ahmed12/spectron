@@ -104,7 +104,7 @@ include("template/header.php");
     <div class="fl-row tech-slider">
         <div class="container">
             <div class="row">
-                <div class="col col-3">
+                <div class="col col-12 col-lg-3">
                     <div class="heading">
                         <h2>Our Technologies</h2>
                     </div>
@@ -112,7 +112,7 @@ include("template/header.php");
                         <p>Quality is our Priority</p>
                     </div>
                 </div>
-                <div class="col col-9">
+                <div class="col col-12 col-lg-9">
                     <div class="tech-slider-box">
                         <div class="owl-carousel owl-theme">
                             <div class="item">
@@ -133,7 +133,8 @@ include("template/header.php");
                             </div>
                             <div class="item">
                                 <div class="icon-box">
-                                    <img src="https://i.postimg.cc/GmCcjHqc/radio.png">
+                                    <!-- <img src="https://i.postimg.cc/GmCcjHqc/radio.png"> -->
+                                    <img src="media/radio_wireless_tower.svg" height="64" >
                                 </div>
                                 <div class="text-block">
                                     <p>Examine data and construct AI to enhance human potential</p>
