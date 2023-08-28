@@ -436,11 +436,24 @@ div.btn-box a {
 .tech-slider-box .owl-carousel .owl-item:nth-child(even) img {
     filter: brightness(0) saturate(100%) invert(27%) sepia(36%) saturate(6146%) hue-rotate(165deg) brightness(90%) contrast(104%);
 }
+.tech-slider-box .owl-carousel .icon-box.radio-svg img {
+    width: 85px;
+    margin-left: -20px;
+}
+.tech-slider-box .owl-carousel.owl-drag .owl-item{
+    overflow: hidden;
+}
 .tech-slider-box .owl-carousel.owl-drag .owl-item .item {
     padding: 70px 60px;
     background-color: var(--accent3);
     height: 100%;
     width: 400px;
+    transition: all ease-out 0.5s;
+}
+.tech-slider-box .owl-carousel.owl-drag .owl-item:hover .item {
+    scale: 1.1;
+    transition: all ease-in 0.5s;
+    background-color: #16203075;
 }
 .tech-slider-box .owl-carousel .item .text-block p {
     font-size: 18px;

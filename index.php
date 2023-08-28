@@ -132,7 +132,7 @@ include("template/header.php");
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="icon-box">
+                                <div class="icon-box radio-svg">
                                     <!-- <img src="https://i.postimg.cc/GmCcjHqc/radio.png"> -->
                                     <img src="media/radio_wireless_tower.svg" height="64" >
                                 </div>

@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel(
     {
-      margin:25,
+      margin:30,
       loop:true,
       autoWidth:true,
       items:1,

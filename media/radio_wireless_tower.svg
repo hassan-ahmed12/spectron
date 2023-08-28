@@ -2,10 +2,10 @@
 <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 23000 27000" version="1.1">
   <style type="text/css">
       g.right-1, g.right-2, g.right-3, g.right-4, g.right-5 {
-          animation: g-right 3s infinite;;
+          animation: g-right 2.5s infinite;;
       }
       g.left-1, g.left-2, g.left-3, g.left-4, g.left-5 {
-          animation: g-left 3s infinite;
+          animation: g-left 2.5s infinite;
       }
       @keyframes g-right {
         0%{transform: translateX(0);}
