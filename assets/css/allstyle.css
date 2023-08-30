@@ -284,7 +284,8 @@ div.btn-box a {
     max-width: 1200px;
 }
 .fl-row.about-us .col:nth-child(2) {
-    background: var(--accent);
+    background-color: var(--accent);
+    background-image: linear-gradient(180deg, rgba(0,128,128,1) 0%, rgba(229,161,2,1) 100%);
     margin-top: -80px;
 }
 .fl-row.about-us .col:nth-child(3) {
@@ -318,7 +319,7 @@ div.btn-box a {
     left: -50px;
     height: 50px;
     width: 50px;
-    border-bottom: 50px solid #684901;
+    border-bottom: 50px solid #005555;
     border-left: 50px solid transparent;
     z-index: 2;
 }
@@ -439,6 +440,17 @@ div.btn-box a {
 .tech-slider-box .owl-carousel .icon-box.radio-svg img {
     width: 85px;
     margin-left: -20px;
+}
+.tech-slider-box .owl-carousel .icon-box.wrench img{
+    transform-origin: 10px 10px;
+    animation: wrench-anim 3s infinite linear;
+}
+@keyframes wrench-anim {
+    0%{transform: rotateZ(0deg);}
+    25%{transform: rotateZ(-20deg);}
+    50%{transform: rotateZ(40deg);}
+    75%{transform: rotateZ(-80deg);}
+    100%{transform: rotateZ(0deg);}
 }
 .tech-slider-box .owl-carousel.owl-drag .owl-item{
     overflow: hidden;
