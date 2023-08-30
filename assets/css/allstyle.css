@@ -443,13 +443,14 @@ div.btn-box a {
 }
 .tech-slider-box .owl-carousel .icon-box.wrench img{
     transform-origin: 10px 10px;
-    animation: wrench-anim 3s infinite linear;
+    animation: wrench-anim 10s infinite linear;
 }
 @keyframes wrench-anim {
     0%{transform: rotateZ(0deg);}
-    25%{transform: rotateZ(-20deg);}
-    50%{transform: rotateZ(40deg);}
-    75%{transform: rotateZ(-80deg);}
+    12%{transform: rotateZ(-20deg);}
+    25%{transform: rotateZ(40deg);}
+    38%{transform: rotateZ(-80deg);}
+    50%{transform: rotateZ(0deg);}
     100%{transform: rotateZ(0deg);}
 }
 .tech-slider-box .owl-carousel.owl-drag .owl-item{
