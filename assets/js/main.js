@@ -90,5 +90,11 @@ $(document).ready(function(){
   // });
   // });
 
+  
+  // // jquery func to show elements from another page or tag to a tag through
+  // $(function(){
+  //   $("#dynamic-header").load("template/header.html #header");
+  // });
+
 
 
