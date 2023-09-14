@@ -71,10 +71,13 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel(
     {
+      items:1,
       margin:30,
       loop:true,
       autoWidth:true,
-      items:1,
+      autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true,
     }
   );
 });
