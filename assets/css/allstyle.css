@@ -418,7 +418,7 @@ div.btn-box a {
 }
 .tech-slider-box .owl-carousel .owl-stage {
     display: flex;
-    transition: all ease-in-out 0.8s !important;
+    /* transition: all ease-in-out 0.8s !important; */
 }
 .fl-row.tech-slider .row .col:first-child {
     position: absolute;
@@ -472,7 +472,7 @@ div.btn-box a {
     font-size: 18px;
 }
 .tech-slider-box .owl-theme .owl-dots {
-    top: 20px;
+    top: 30px;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -490,4 +490,25 @@ div.btn-box a {
     width: 8px;
     height: 8px;
     margin: 5px 9px;
+}
+.tech-slider-box .owl-theme .owl-nav {
+    position: absolute;
+    left: -33.5%;
+    bottom: 0;
+}
+body .tech-slider-box .owl-theme .owl-nav > button {
+    background-color: var(--accent1);
+    border-radius: 50%;
+    color: var(--white);
+    width: 45px;
+    height: 45px;
+    transition: all ease 0.4s;
+}
+body .tech-slider-box .owl-theme .owl-nav > button:hover {
+    background: var(--accent1);
+    scale: 1.1;
+    transition: all ease 0.4s;
+}
+.tech-slider-box .owl-theme .owl-nav > button i {
+    font-size: 25px;
 }

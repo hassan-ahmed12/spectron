@@ -78,6 +78,11 @@ $(document).ready(function(){
       autoplay:true,
       autoplayTimeout:5000,
       autoplayHoverPause:true,
+      // animateOut: 'fadeOut',
+      // animateIn: 'fadeIn',
+      smartSpeed: 1000,
+      nav: true,
+      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"], // Custom navigation text/icons    
     }
   );
 });
