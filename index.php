@@ -4,6 +4,21 @@ include("template/header.php");
 ?>
 <div class="home">
     <div class="fl-row hero">
+    <!-- <div id="particles-js"></div> -->
+    <div class="anime-bg">
+        <div class="squares">
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+        </div>
+    </div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-xl-8">

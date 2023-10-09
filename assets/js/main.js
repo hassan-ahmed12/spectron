@@ -87,6 +87,15 @@ $(document).ready(function(){
   );
 });
 
+//Particle JS Load
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+// window.addEventListener('DOMContentLoaded', (event) => {  
+// particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+//   console.log('particles.js loaded - callback');
+// });
+// });
+
+
   // // Jquery code to add class on click function
   // $(document).ready(function(){
   //   $('.head-menu ul li').click(function(){
