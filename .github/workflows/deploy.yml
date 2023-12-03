@@ -7,17 +7,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      HOST: ${{ secrets.SSH_HOST }}
-      USERNAME: ${{ secrets.SSH_SSH_USERNAME }}
-      KEY: ${{ secrets.SSH_SSH_PRIVATE_KEY }}
     steps:
       - name: multiple command
-        uses: appleboy/ssh-action@master
+        uses: JimCronqvist/action-ssh@master
         with:
-          host: $HOST
-          username: $USERNAME
-          key: $KEY
+          hosts: 'spectrondigital.xyz@ssh.gb.stackcp.com'
+          privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            ls -lah
             cd public_html
             git pull origin main
