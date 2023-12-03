@@ -9,11 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: multiple command
-        uses: JimCronqvist/action-ssh@master
+        uses: appleboy/ssh-action@v1.0.0
         with:
-          hosts: 'spectrondigital.xyz@ssh.gb.stackcp.com'
-          privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
-          command: |
+          host: 'ssh.gb.stackcp.com'
+          username: 'spectrondigital.xyz'
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
             ls -lah
             cd public_html
             git pull origin main
