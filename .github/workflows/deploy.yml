@@ -7,14 +7,17 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      HOST: ${{ secrets.SSH_HOST }}
+      USERNAME: ${{ secrets.SSH_SSH_USERNAME }}
+      KEY: ${{ secrets.SSH_SSH_PRIVATE_KEY }}
     steps:
       - name: multiple command
         uses: appleboy/ssh-action@master
         with:
-          secrets: inherit
-          host: ssh.gb.stackcp.com
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          host: $HOST
+          username: $USERNAME
+          key: $KEY
           script: |
             cd public_html
             git pull origin main
