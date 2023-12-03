@@ -17,3 +17,4 @@ jobs:
             ls -lah
             cd public_html
             git pull origin main
+          debug: true
