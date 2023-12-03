@@ -12,22 +12,29 @@
 #       - run: echo "😂 Hassan sucks ${{ secrets.SSH_USERNAME }} ${{ secrets.SSH_HOST }}"
 #       - run: ssh -i ${{ secrets.SSH_PUBLIC_KEY }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}
 
-name: Deploy Spectron
+name: "Deploy Spectron"
 on:
   push:
     branches:
       - main
 
 jobs:
-  DeployToRemote:
+  PrintDeploymentStatus:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Display Event Trigger
+        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
-      - name: SSH into server and update repository
-        run: |
-          ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} << 'ENDSSH'
-          cd public_html/
-          git pull origin main
-          ENDSSH
+  DeployToRemote:
+    runs-on: ubuntu-latest
+    needs: [PrintDeploymentStatus]
+    steps:
+      - name: SSH into the Remote Server and Update Repo
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd cd public_html/
+            git pull origin main 
