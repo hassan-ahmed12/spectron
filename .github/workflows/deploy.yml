@@ -13,7 +13,7 @@ jobs:
         with:
           hosts: 'spectrondigital.xyz@ssh.gb.stackcp.com'
           privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
+          command: |
             ls -lah
             cd public_html
             git pull origin main
