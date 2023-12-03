@@ -11,6 +11,7 @@ jobs:
       - name: multiple command
         uses: appleboy/ssh-action@master
         with:
+          secrets: inherit
           host: ssh.gb.stackcp.com
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
