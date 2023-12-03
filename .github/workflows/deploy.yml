@@ -1,13 +1,38 @@
+# name: "Deploy Spectron"
+# run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+# on: [push]
+# jobs:
+#   PrintDeploymentStatus:
+#     runs-on:  ubuntu-latest
+#     steps:
+#       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+#   DeployToRemote:
+#     runs-on:  ubuntu-latest
+#     steps:
+#       - run: ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}
+
 name: "Deploy Spectron"
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   PrintDeploymentStatus:
-    runs-on:  ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Print event trigger
+        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+
   DeployToRemote:
-    runs-on:  ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "😂 Hassan sucks ${{ secrets.SSH_USERNAME }} ${{ secrets.SSH_HOST }}"
-      - run: ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}
+      - name: SSH into the remote server and execute git pull
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd public_html/
+            git pull
