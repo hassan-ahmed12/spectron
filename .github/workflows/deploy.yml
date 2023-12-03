@@ -1,13 +1,33 @@
-name: "Deploy Spectron"
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+# name: "Deploy Spectron"
+# run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+# on: [push]
+# jobs:
+#   PrintDeploymentStatus:
+#     runs-on:  ubuntu-latest
+#     steps:
+#       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+#   DeployToRemote:
+#     runs-on:  ubuntu-latest
+#     steps:
+#       - run: echo "😂 Hassan sucks ${{ secrets.SSH_USERNAME }} ${{ secrets.SSH_HOST }}"
+#       - run: ssh -i ${{ secrets.SSH_PUBLIC_KEY }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}
+
+name: Deploy Spectron
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  PrintDeploymentStatus:
-    runs-on:  ubuntu-latest
+  DeployToRemote:
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-  # DeployToRemote:
-  #   runs-on:  ubuntu-latest
-  #   steps:
-  #     - run: echo "😂 Hassan sucks ${{ secrets.SSH_USERNAME }} ${{ secrets.SSH_HOST }}"
-  #     - run: ssh -i ${{ secrets.SSH_PUBLIC_KEY }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: SSH into server and update repository
+        run: |
+          ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} << 'ENDSSH'
+          cd public_html/
+          git pull origin main
+          ENDSSH
