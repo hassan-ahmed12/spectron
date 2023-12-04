@@ -1,17 +1,17 @@
-name: "Deploy Spectron"
-on:
-  push:
-    branches:
-      - main
+# name: "Deploy Spectron"
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Running Multiple"
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: 'ftp.spectrondigital.xyz'
-          username: 'spectrondigital.xyz'
-          password: ${{secrets.FTP_PASSWORD}}
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: "Running Multiple"
+#         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+#         with:
+#           server: 'ftp.spectrondigital.xyz'
+#           username: 'spectrondigital.xyz'
+#           password: ${{secrets.FTP_PASSWORD}}
 
