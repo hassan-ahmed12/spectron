@@ -41,7 +41,7 @@
                 <div class="row">
                     <div class="col col-9 col-sm-9 col-lg-3">
                         <div class="main-logo">
-                            <a href="/spectron" class="menu-logo" id="menu-logo">
+                            <a href="/" class="menu-logo" id="menu-logo">
                                 <img src="https://i.postimg.cc/054d53QQ/spectron-logo.png" alt="logo" width="200px">
                             </a>
                         </div>
